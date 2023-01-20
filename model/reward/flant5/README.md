@@ -15,14 +15,7 @@ torch==1.12
 Start training reward model
 
 ```bash
-python trainer.py configs/electra-base-dis-webgpt.yml
-```
-
-Additional axis labeling, this outputs a 4 summary quality evaluation metrics
-(score are normalized to 0-1 )
-
-```bash
-python summary_quality_trainer.py configs/test-bloomz-560m-quality.yml
+python trainer.py configs/flan-t5-webgpt.yml
 ```
 
 The four summary are :
@@ -34,6 +27,13 @@ The four summary are :
 - coverage
 
 - coherence
+
+### Changes
+- Implemented contrastive loss
+- Added an MLP embedding_size => 256 => 1 on top of frozen FlanT5 encoder. Embeddings are flattened to scalars, cosine similarity is computed between token sequences.
+- Delicate assumptions: 
+	1. loss function is the sum over batch examples losses
+	2. No FlanT5 finetuning (frozen)
 
 ## Dataset
 
