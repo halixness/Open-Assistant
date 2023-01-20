@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2023-01-19T22:26:17.386113",
+    "startedAt": "2023-01-19T22:26:16.668211",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "configs/flant-t5-webgpt.yml"
+    ],
+    "state": "running",
+    "program": "trainer_online.py",
+    "codePath": "model\\reward\\flant5-xxl\\trainer_online.py",
+    "git": {
+        "remote": "https://github.com/LAION-AI/Open-Assistant",
+        "commit": "7a1a8c8b54a0bfda792339e5dcff131aca4f8093"
+    },
+    "email": "xdiego.wp@hotmail.com",
+    "root": "C:/Users/xdieg/OneDrive/Desktop/Research/Open-Assistant",
+    "host": "DeepRedDragon",
+    "username": "xdieg",
+    "executable": "C:\\Users\\xdieg\\anaconda3\\envs\\pytorch_deeplearning\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2301.0,
+        "min": 0.0,
+        "max": 2301.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2301.0,
+            "min": 0.0,
+            "max": 2301.0
+        }
+    ],
+    "disk": {
+        "total": 453.46874618530273,
+        "used": 400.230411529541
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.708480834960938
+    }
+}

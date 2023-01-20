@@ -1,0 +1,200 @@
+2023-01-19 22:53:42,462 INFO    StreamThr :14528 [internal.py:wandb_internal():87] W&B internal server running at pid: 14528, started at: 2023-01-19 22:53:42.461055
+2023-01-19 22:53:42,466 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: status
+2023-01-19 22:53:42,468 INFO    WriterThread:14528 [datastore.py:open_for_write():85] open: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\run-gb4mifz2.wandb
+2023-01-19 22:53:42,475 DEBUG   SenderThread:14528 [sender.py:send():334] send: header
+2023-01-19 22:53:42,528 DEBUG   SenderThread:14528 [sender.py:send():334] send: run
+2023-01-19 22:53:47,589 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-19 22:53:52,649 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-19 22:53:54,353 INFO    SenderThread:14528 [dir_watcher.py:__init__():216] watching files in: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files
+2023-01-19 22:53:54,354 INFO    SenderThread:14528 [sender.py:_start_run_threads():1065] run started: gb4mifz2 with start time 1674165222.460073
+2023-01-19 22:53:54,354 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: summary_record
+2023-01-19 22:53:54,354 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: status_report
+2023-01-19 22:53:54,355 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: check_version
+2023-01-19 22:53:54,356 INFO    SenderThread:14528 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-19 22:53:54,356 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: check_version
+2023-01-19 22:53:54,511 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: run_start
+2023-01-19 22:53:55,356 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-summary.json
+2023-01-19 22:53:55,478 DEBUG   HandlerThread:14528 [system_info.py:__init__():31] System info init
+2023-01-19 22:53:55,478 DEBUG   HandlerThread:14528 [system_info.py:__init__():46] System info init done
+2023-01-19 22:53:55,478 INFO    HandlerThread:14528 [system_monitor.py:start():151] Starting system monitor
+2023-01-19 22:53:55,479 INFO    SystemMonitor:14528 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-19 22:53:55,479 INFO    HandlerThread:14528 [system_monitor.py:probe():172] Collecting system info
+2023-01-19 22:53:55,485 INFO    SystemMonitor:14528 [interfaces.py:start():168] Started cpu
+2023-01-19 22:53:55,485 INFO    SystemMonitor:14528 [interfaces.py:start():168] Started disk
+2023-01-19 22:53:55,486 INFO    SystemMonitor:14528 [interfaces.py:start():168] Started gpu
+2023-01-19 22:53:55,487 INFO    SystemMonitor:14528 [interfaces.py:start():168] Started memory
+2023-01-19 22:53:55,497 INFO    SystemMonitor:14528 [interfaces.py:start():168] Started network
+2023-01-19 22:53:55,503 DEBUG   HandlerThread:14528 [system_info.py:probe():195] Probing system
+2023-01-19 22:53:55,505 DEBUG   HandlerThread:14528 [system_info.py:_probe_git():180] Probing git
+2023-01-19 22:53:55,507 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: No data
+2023-01-19 22:53:55,507 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: No data
+2023-01-19 22:53:55,635 DEBUG   HandlerThread:14528 [system_info.py:_probe_git():188] Probing git done
+2023-01-19 22:53:55,636 DEBUG   HandlerThread:14528 [system_info.py:probe():241] Probing system done
+2023-01-19 22:53:55,636 DEBUG   HandlerThread:14528 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.22000-SP0', 'python': '3.8.13', 'heartbeatAt': '2023-01-19T21:53:55.503989', 'startedAt': '2023-01-19T21:53:42.446316', 'docker': None, 'cuda': None, 'args': ('configs/flant-t5-webgpt.yml',), 'state': 'running', 'program': 'trainer.py', 'codePath': 'model\\reward\\flant5-xxl\\trainer.py', 'git': {'remote': 'https://github.com/LAION-AI/Open-Assistant', 'commit': '7a1a8c8b54a0bfda792339e5dcff131aca4f8093'}, 'email': 'xdiego.wp@hotmail.com', 'root': 'C:/Users/xdieg/OneDrive/Desktop/Research/Open-Assistant', 'host': 'DeepRedDragon', 'username': 'xdieg', 'executable': 'C:\\Users\\xdieg\\anaconda3\\envs\\pytorch_deeplearning\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2301.0, 'min': 0.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 2301.0, 'min': 0.0, 'max': 2301.0}], 'disk': {'total': 453.46874618530273, 'used': 400.5799789428711}, 'gpu': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'memory_total': 8589934592}], 'memory': {'total': 15.708480834960938}}
+2023-01-19 22:53:55,636 INFO    HandlerThread:14528 [system_monitor.py:probe():182] Finished collecting system info
+2023-01-19 22:53:55,636 INFO    HandlerThread:14528 [system_monitor.py:probe():185] Publishing system info
+2023-01-19 22:53:55,636 DEBUG   HandlerThread:14528 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-19 22:53:55,637 DEBUG   HandlerThread:14528 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-19 22:53:55,638 DEBUG   HandlerThread:14528 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-19 22:53:56,362 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\conda-environment.yaml
+2023-01-19 22:53:56,362 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\requirements.txt
+2023-01-19 22:53:57,524 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:53:59,546 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:54:01,558 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:54:03,150 DEBUG   HandlerThread:14528 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-19 22:54:03,152 INFO    HandlerThread:14528 [system_monitor.py:probe():187] Finished publishing system info
+2023-01-19 22:54:03,157 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: status_report
+2023-01-19 22:54:03,157 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-19 22:54:03,158 DEBUG   SenderThread:14528 [sender.py:send():334] send: files
+2023-01-19 22:54:03,158 INFO    SenderThread:14528 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-01-19 22:54:03,178 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: stop_status
+2023-01-19 22:54:03,179 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: stop_status
+2023-01-19 22:54:03,391 DEBUG   SenderThread:14528 [sender.py:send():334] send: telemetry
+2023-01-19 22:54:03,391 DEBUG   SenderThread:14528 [sender.py:send():334] send: config
+2023-01-19 22:54:03,393 DEBUG   SenderThread:14528 [sender.py:send():334] send: metric
+2023-01-19 22:54:03,393 DEBUG   SenderThread:14528 [sender.py:send():334] send: telemetry
+2023-01-19 22:54:03,393 DEBUG   SenderThread:14528 [sender.py:send():334] send: metric
+2023-01-19 22:54:03,393 WARNING SenderThread:14528 [sender.py:send_metric():1270] Seen metric with glob (shouldn't happen)
+2023-01-19 22:54:03,393 DEBUG   SenderThread:14528 [sender.py:send():334] send: telemetry
+2023-01-19 22:54:03,418 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\conda-environment.yaml
+2023-01-19 22:54:03,419 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\output.log
+2023-01-19 22:54:03,420 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-metadata.json
+2023-01-19 22:54:03,581 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:54:03,803 INFO    Thread-22 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\AppData\Local\Temp\tmpkmvsv7irwandb\8723yptk-wandb-metadata.json
+2023-01-19 22:54:05,415 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: status_report
+2023-01-19 22:54:05,448 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\output.log
+2023-01-19 22:54:05,600 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:54:07,618 ERROR   gpu       :14528 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-19 22:54:08,908 DEBUG   SenderThread:14528 [sender.py:send():334] send: exit
+2023-01-19 22:54:08,909 INFO    SenderThread:14528 [sender.py:send_exit():557] handling exit code: 1
+2023-01-19 22:54:08,910 INFO    SenderThread:14528 [sender.py:send_exit():559] handling runtime: 14
+2023-01-19 22:54:08,912 INFO    SenderThread:14528 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-19 22:54:08,913 INFO    SenderThread:14528 [sender.py:send_exit():565] send defer
+2023-01-19 22:54:08,914 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,914 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 0
+2023-01-19 22:54:08,915 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,915 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-01-19 22:54:08,915 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 1
+2023-01-19 22:54:08,915 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,916 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 1
+2023-01-19 22:54:08,916 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,916 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-01-19 22:54:08,916 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 2
+2023-01-19 22:54:08,917 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,917 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 2
+2023-01-19 22:54:08,917 INFO    HandlerThread:14528 [system_monitor.py:finish():161] Stopping system monitor
+2023-01-19 22:54:08,917 DEBUG   SystemMonitor:14528 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-19 22:54:08,918 DEBUG   SystemMonitor:14528 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-19 22:54:08,918 DEBUG   SystemMonitor:14528 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-19 22:54:08,926 INFO    HandlerThread:14528 [interfaces.py:finish():175] Joined cpu
+2023-01-19 22:54:08,927 INFO    HandlerThread:14528 [interfaces.py:finish():175] Joined disk
+2023-01-19 22:54:08,949 INFO    HandlerThread:14528 [interfaces.py:finish():175] Joined gpu
+2023-01-19 22:54:08,949 INFO    HandlerThread:14528 [interfaces.py:finish():175] Joined memory
+2023-01-19 22:54:08,949 INFO    HandlerThread:14528 [interfaces.py:finish():175] Joined network
+2023-01-19 22:54:08,950 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,950 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-01-19 22:54:08,951 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 3
+2023-01-19 22:54:08,951 DEBUG   SenderThread:14528 [sender.py:send():334] send: stats
+2023-01-19 22:54:08,951 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,951 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 3
+2023-01-19 22:54:08,952 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,952 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-01-19 22:54:08,952 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 4
+2023-01-19 22:54:08,952 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,952 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 4
+2023-01-19 22:54:08,952 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,953 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-01-19 22:54:08,953 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 5
+2023-01-19 22:54:08,953 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,953 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 5
+2023-01-19 22:54:08,953 DEBUG   SenderThread:14528 [sender.py:send():334] send: summary
+2023-01-19 22:54:08,954 INFO    SenderThread:14528 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-19 22:54:08,955 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,955 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-01-19 22:54:08,955 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 6
+2023-01-19 22:54:08,955 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:08,955 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 6
+2023-01-19 22:54:08,956 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:08,956 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-01-19 22:54:08,961 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: status_report
+2023-01-19 22:54:09,326 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 7
+2023-01-19 22:54:09,326 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:09,327 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 7
+2023-01-19 22:54:09,328 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:09,328 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-01-19 22:54:09,484 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\config.yaml
+2023-01-19 22:54:09,484 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-summary.json
+2023-01-19 22:54:09,503 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 8
+2023-01-19 22:54:09,503 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:09,503 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 8
+2023-01-19 22:54:09,504 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:09,504 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-01-19 22:54:09,535 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 9
+2023-01-19 22:54:09,536 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:09,536 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 9
+2023-01-19 22:54:09,536 DEBUG   SenderThread:14528 [sender.py:send():334] send: artifact
+2023-01-19 22:54:09,966 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-19 22:54:10,496 INFO    Thread-17 :14528 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\output.log
+2023-01-19 22:54:11,169 INFO    Thread-25 :14528 [upload_job.py:push():101] Uploaded file C:\Users\xdieg\AppData\Local\wandb\wandb\artifacts\staging\tmpo0wxa3dh
+2023-01-19 22:54:11,173 INFO    Thread-24 :14528 [upload_job.py:push():101] Uploaded file C:\Users\xdieg\AppData\Local\wandb\wandb\artifacts\staging\tmpjllztp95
+2023-01-19 22:54:12,682 INFO    SenderThread:14528 [sender.py:send_artifact():1415] sent artifact job-https___github.com_LAION-AI_Open-Assistant_model_reward_flant5-xxl_trainer.py - {'id': 'QXJ0aWZhY3Q6MzMyOTU4MTkw', 'digest': 'a3ef7619eadc72c0bb713c307c713e74', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMDc3NzU0', 'latestArtifact': None}, 'version': 'latest'}
+2023-01-19 22:54:12,682 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:12,682 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-01-19 22:54:12,682 INFO    SenderThread:14528 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-19 22:54:13,522 INFO    SenderThread:14528 [dir_watcher.py:finish():392] scan: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files
+2023-01-19 22:54:13,523 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\conda-environment.yaml conda-environment.yaml
+2023-01-19 22:54:13,523 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\config.yaml config.yaml
+2023-01-19 22:54:13,524 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\output.log output.log
+2023-01-19 22:54:13,524 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\requirements.txt requirements.txt
+2023-01-19 22:54:13,528 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-metadata.json wandb-metadata.json
+2023-01-19 22:54:13,529 INFO    SenderThread:14528 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-summary.json wandb-summary.json
+2023-01-19 22:54:13,539 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 10
+2023-01-19 22:54:13,539 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: poll_exit
+2023-01-19 22:54:13,539 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:13,539 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 10
+2023-01-19 22:54:13,540 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:13,540 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-01-19 22:54:13,540 INFO    SenderThread:14528 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-19 22:54:14,127 INFO    Thread-30 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\wandb-summary.json
+2023-01-19 22:54:14,148 INFO    Thread-28 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\output.log
+2023-01-19 22:54:14,150 INFO    Thread-26 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\conda-environment.yaml
+2023-01-19 22:54:14,191 INFO    Thread-29 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\requirements.txt
+2023-01-19 22:54:14,193 INFO    Thread-27 :14528 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\files\config.yaml
+2023-01-19 22:54:14,408 INFO    Thread-16 :14528 [sender.py:transition_state():585] send defer: 11
+2023-01-19 22:54:14,408 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:14,408 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 11
+2023-01-19 22:54:14,410 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:14,410 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-01-19 22:54:14,410 INFO    SenderThread:14528 [file_pusher.py:join():165] waiting for file pusher
+2023-01-19 22:54:14,410 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 12
+2023-01-19 22:54:14,410 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:14,410 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 12
+2023-01-19 22:54:14,411 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:14,411 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-01-19 22:54:14,585 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 13
+2023-01-19 22:54:14,585 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:14,586 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 13
+2023-01-19 22:54:14,586 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:14,586 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-01-19 22:54:14,586 INFO    SenderThread:14528 [sender.py:transition_state():585] send defer: 14
+2023-01-19 22:54:14,586 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: defer
+2023-01-19 22:54:14,586 INFO    HandlerThread:14528 [handler.py:handle_request_defer():170] handle defer: 14
+2023-01-19 22:54:14,588 DEBUG   SenderThread:14528 [sender.py:send():334] send: final
+2023-01-19 22:54:14,588 DEBUG   SenderThread:14528 [sender.py:send():334] send: footer
+2023-01-19 22:54:14,588 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: defer
+2023-01-19 22:54:14,588 INFO    SenderThread:14528 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-01-19 22:54:14,589 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-19 22:54:14,589 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: server_info
+2023-01-19 22:54:14,589 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: get_summary
+2023-01-19 22:54:14,589 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: sampled_history
+2023-01-19 22:54:14,590 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: poll_exit
+2023-01-19 22:54:14,591 DEBUG   SenderThread:14528 [sender.py:send_request():361] send_request: server_info
+2023-01-19 22:54:14,803 INFO    MainThread:14528 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-01-19 22:54:14,803 INFO    MainThread:14528 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-01-19 22:54:14,804 INFO    MainThread:14528 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-01-19 22:54:14,808 DEBUG   HandlerThread:14528 [handler.py:handle_request():144] handle_request: shutdown
+2023-01-19 22:54:14,808 INFO    HandlerThread:14528 [handler.py:finish():841] shutting down handler
+2023-01-19 22:54:15,590 INFO    WriterThread:14528 [datastore.py:close():299] close: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\wandb\run-20230119_225342-gb4mifz2\run-gb4mifz2.wandb
+2023-01-19 22:54:15,807 INFO    SenderThread:14528 [sender.py:finish():1491] shutting down sender
+2023-01-19 22:54:15,807 INFO    SenderThread:14528 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-19 22:54:15,807 INFO    SenderThread:14528 [file_pusher.py:join():165] waiting for file pusher

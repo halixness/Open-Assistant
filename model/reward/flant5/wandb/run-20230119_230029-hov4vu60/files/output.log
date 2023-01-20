@@ -1,0 +1,23 @@
+  0%|                                                                                                                                                                                     | 0/978 [00:00<?, ?it/s]C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\tokenization_utils_base.py:2354: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "trainer.py", line 212, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 75, in compute_loss
+    outputs = model(**inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: forward() got an unexpected keyword argument 'input_ids'
+{'input_ids': tensor([[ 363, 1776,  656,  ...,    0,    0,    0],
+        [ 363, 1776,  656,  ...,    0,    0,    0],
+        [  37,  368, 1060,  ...,  357, 4275,    1],
+        [  37,  368, 1060,  ...,    0,    0,    0]], device='cuda:0'), 'attention_mask': tensor([[1, 1, 1,  ..., 0, 0, 0],
+        [1, 1, 1,  ..., 0, 0, 0],
+        [1, 1, 1,  ..., 1, 1, 1],
+        [1, 1, 1,  ..., 0, 0, 0]], device='cuda:0')}

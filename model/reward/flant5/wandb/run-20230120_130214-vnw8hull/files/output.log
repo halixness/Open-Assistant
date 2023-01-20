@@ -1,0 +1,137 @@
+
+
+
+
+
+
+
+
+
+
+
+  1%|▊                                                                                  | 10/978 [01:06<1:43:00,  6.38s/it]
+
+
+
+
+
+
+
+
+
+  2%|█▌                                                                                 | 19/978 [02:03<1:42:25,  6.41s/it]
+
+
+
+
+
+
+
+
+
+
+  3%|██▍                                                                                | 29/978 [03:07<1:40:45,  6.37s/it]
+
+
+
+
+
+
+
+
+
+
+  4%|███▎                                                                               | 39/978 [04:11<1:42:19,  6.54s/it]
+
+
+
+
+
+
+
+
+
+
+  5%|████▏                                                                              | 49/978 [05:15<1:41:00,  6.52s/it]
+
+
+
+
+
+
+
+
+
+
+  6%|█████                                                                              | 59/978 [06:19<1:37:21,  6.36s/it]
+
+
+
+
+
+
+
+
+
+
+  7%|█████▊                                                                             | 69/978 [07:25<1:39:18,  6.56s/it]
+
+
+
+
+
+
+
+
+
+
+  8%|██████▋                                                                            | 79/978 [08:30<1:39:10,  6.62s/it]
+
+
+
+
+
+
+
+
+
+
+  9%|███████▌                                                                           | 89/978 [09:36<1:38:54,  6.68s/it]
+
+
+  9%|███████▋                                                                           | 91/978 [09:49<1:38:00,  6.63s/it]Traceback (most recent call last):
+  File "trainer.py", line 215, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 72, in compute_loss
+    negative_scores = model(inputs["prefix"], inputs["negative"])
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\models.py", line 55, in forward
+    embedded_suffixes = self.model(**suffixes).last_hidden_state
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1846, in forward
+    encoder_outputs = self.encoder(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1040, in forward
+    layer_outputs = layer_module(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 579, in forward
+    attention_output = self.SelfAttention(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 529, in forward
+    position_bias = position_bias + mask  # (batch_size, n_heads, seq_length, key_length)
+RuntimeError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 8.00 GiB total capacity; 6.87 GiB already allocated; 0 bytes free; 7.29 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

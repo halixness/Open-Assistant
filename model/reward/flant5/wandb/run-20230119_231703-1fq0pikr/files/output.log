@@ -1,0 +1,16 @@
+  0%|                                                                                                                                                                                     | 0/978 [00:00<?, ?it/s]C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\tokenization_utils_base.py:2354: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "trainer.py", line 290, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 55, in compute_loss
+    positive_outputs = model(inputs["prefix"], inputs["positive"])
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\tokenization_utils_base.py", line 237, in __getitem__
+    return self.data[item]
+KeyError: 'prefix'

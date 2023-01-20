@@ -1,0 +1,37 @@
+
+
+
+  0%|▎                                                                                                                                                                          | 2/978 [00:14<1:53:26,  6.97s/it]Traceback (most recent call last):
+  File "trainer.py", line 215, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 72, in compute_loss
+    negative_scores = model(inputs["prefix"], inputs["negative"])
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\models.py", line 31, in forward
+    embedded_prefixes = self.model(**prefixes).last_hidden_state
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1846, in forward
+    encoder_outputs = self.encoder(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1040, in forward
+    layer_outputs = layer_module(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 578, in forward
+    normed_hidden_states = self.layer_norm(hidden_states)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1195, in __getattr__
+    if '_parameters' in self.__dict__:
+KeyboardInterrupt

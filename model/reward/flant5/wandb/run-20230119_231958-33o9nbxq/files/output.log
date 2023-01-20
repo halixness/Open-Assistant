@@ -1,0 +1,18 @@
+  0%|                                                                                                                                                                                     | 0/978 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "trainer.py", line 292, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1749, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\utils\data\dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\utils\data\dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer_utils.py", line 696, in __call__
+    return self.data_collator(features)
+  File "C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5-xxl\rank_datasets.py", line 41, in __call__
+    print(batch.size)
+AttributeError: 'list' object has no attribute 'size'
