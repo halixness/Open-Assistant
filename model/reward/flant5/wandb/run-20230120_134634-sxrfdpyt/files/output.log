@@ -1,0 +1,41 @@
+
+  0%|                                                                                                                                                                                     | 0/978 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "trainer.py", line 221, in <module>
+    # trainer.evaluate()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 71, in compute_loss
+    positive_scores = model(inputs["prefix"], inputs["positive"])
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\models.py", line 29, in forward
+    embedded_prefixes = self.model(**prefixes).last_hidden_state
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1846, in forward
+    encoder_outputs = self.encoder(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1040, in forward
+    layer_outputs = layer_module(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 579, in forward
+    attention_output = self.SelfAttention(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 521, in forward
+    position_bias = self.compute_bias(real_seq_length, key_length, device=scores.device)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 428, in compute_bias
+    relative_position_bucket = self._relative_position_bucket(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 409, in _relative_position_bucket
+    relative_position_if_large = max_exact + (
+KeyboardInterrupt

@@ -1,0 +1,973 @@
+2023-01-20 13:26:09,871 INFO    StreamThr :15308 [internal.py:wandb_internal():87] W&B internal server running at pid: 15308, started at: 2023-01-20 13:26:09.870199
+2023-01-20 13:26:09,872 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status
+2023-01-20 13:26:09,874 INFO    WriterThread:15308 [datastore.py:open_for_write():85] open: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\run-uch7o275.wandb
+2023-01-20 13:26:09,875 DEBUG   SenderThread:15308 [sender.py:send():334] send: header
+2023-01-20 13:26:09,913 DEBUG   SenderThread:15308 [sender.py:send():334] send: run
+2023-01-20 13:26:10,417 INFO    SenderThread:15308 [dir_watcher.py:__init__():216] watching files in: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files
+2023-01-20 13:26:10,417 INFO    SenderThread:15308 [sender.py:_start_run_threads():1065] run started: uch7o275 with start time 1674217569.870198
+2023-01-20 13:26:10,417 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:26:10,417 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:26:10,420 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: check_version
+2023-01-20 13:26:10,421 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: check_version
+2023-01-20 13:26:10,561 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: run_start
+2023-01-20 13:26:10,579 DEBUG   HandlerThread:15308 [system_info.py:__init__():31] System info init
+2023-01-20 13:26:10,579 DEBUG   HandlerThread:15308 [system_info.py:__init__():46] System info init done
+2023-01-20 13:26:10,579 INFO    HandlerThread:15308 [system_monitor.py:start():151] Starting system monitor
+2023-01-20 13:26:10,580 INFO    SystemMonitor:15308 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-20 13:26:10,580 INFO    HandlerThread:15308 [system_monitor.py:probe():172] Collecting system info
+2023-01-20 13:26:10,584 INFO    SystemMonitor:15308 [interfaces.py:start():168] Started cpu
+2023-01-20 13:26:10,584 INFO    SystemMonitor:15308 [interfaces.py:start():168] Started disk
+2023-01-20 13:26:10,585 INFO    SystemMonitor:15308 [interfaces.py:start():168] Started gpu
+2023-01-20 13:26:10,585 INFO    SystemMonitor:15308 [interfaces.py:start():168] Started memory
+2023-01-20 13:26:10,593 INFO    SystemMonitor:15308 [interfaces.py:start():168] Started network
+2023-01-20 13:26:10,608 DEBUG   HandlerThread:15308 [system_info.py:probe():195] Probing system
+2023-01-20 13:26:10,609 DEBUG   HandlerThread:15308 [system_info.py:_probe_git():180] Probing git
+2023-01-20 13:26:10,611 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:10,684 DEBUG   HandlerThread:15308 [system_info.py:_probe_git():188] Probing git done
+2023-01-20 13:26:10,684 DEBUG   HandlerThread:15308 [system_info.py:probe():241] Probing system done
+2023-01-20 13:26:10,684 DEBUG   HandlerThread:15308 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.22000-SP0', 'python': '3.8.13', 'heartbeatAt': '2023-01-20T12:26:10.608703', 'startedAt': '2023-01-20T12:26:09.863431', 'docker': None, 'cuda': None, 'args': ('configs\\flan-t5-webgpt.yml',), 'state': 'running', 'program': 'trainer.py', 'codePath': 'model\\reward\\flant5\\trainer.py', 'git': {'remote': 'https://github.com/halixness/Open-Assistant', 'commit': '2db330ca9df29b09d71ece528db549a71b1cebbf'}, 'email': 'xdiego.wp@hotmail.com', 'root': 'C:/Users/xdieg/OneDrive/Desktop/Research/Open-Assistant', 'host': 'DeepRedDragon', 'username': 'xdieg', 'executable': 'C:\\Users\\xdieg\\anaconda3\\envs\\pytorch_deeplearning\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2301.0, 'min': 0.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 2301.0, 'min': 0.0, 'max': 2301.0}], 'disk': {'total': 453.46874618530273, 'used': 402.8728675842285}, 'gpu': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070 Laptop GPU', 'memory_total': 8589934592}], 'memory': {'total': 15.708480834960938}}
+2023-01-20 13:26:10,684 INFO    HandlerThread:15308 [system_monitor.py:probe():182] Finished collecting system info
+2023-01-20 13:26:10,684 INFO    HandlerThread:15308 [system_monitor.py:probe():185] Publishing system info
+2023-01-20 13:26:10,684 DEBUG   HandlerThread:15308 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-20 13:26:10,685 DEBUG   HandlerThread:15308 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-20 13:26:10,685 DEBUG   HandlerThread:15308 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-20 13:26:11,424 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\conda-environment.yaml
+2023-01-20 13:26:11,424 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\requirements.txt
+2023-01-20 13:26:11,424 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:26:12,622 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:14,340 DEBUG   HandlerThread:15308 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-20 13:26:14,341 INFO    HandlerThread:15308 [system_monitor.py:probe():187] Finished publishing system info
+2023-01-20 13:26:14,344 DEBUG   SenderThread:15308 [sender.py:send():334] send: files
+2023-01-20 13:26:14,344 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-01-20 13:26:14,352 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: stop_status
+2023-01-20 13:26:14,353 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: stop_status
+2023-01-20 13:26:14,452 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\conda-environment.yaml
+2023-01-20 13:26:14,453 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-metadata.json
+2023-01-20 13:26:14,582 DEBUG   SenderThread:15308 [sender.py:send():334] send: telemetry
+2023-01-20 13:26:14,582 DEBUG   SenderThread:15308 [sender.py:send():334] send: config
+2023-01-20 13:26:14,582 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:26:14,582 DEBUG   SenderThread:15308 [sender.py:send():334] send: telemetry
+2023-01-20 13:26:14,583 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:26:14,583 WARNING SenderThread:15308 [sender.py:send_metric():1270] Seen metric with glob (shouldn't happen)
+2023-01-20 13:26:14,583 DEBUG   SenderThread:15308 [sender.py:send():334] send: telemetry
+2023-01-20 13:26:14,637 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:15,001 INFO    Thread-22 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\AppData\Local\Temp\tmpi3z_l1rewandb\1bvq0my7-wandb-metadata.json
+2023-01-20 13:26:15,461 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:15,599 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:16,662 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:17,478 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:18,686 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:20,647 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:20,700 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:22,708 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:24,725 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:26,135 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:26,735 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:27,543 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:28,749 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:29,354 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:29,354 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:30,765 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:32,131 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:32,784 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:33,595 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:34,389 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:34,804 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:36,829 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:37,178 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:38,839 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:39,439 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:39,643 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:40,882 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:42,421 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:42,890 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:43,656 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\config.yaml
+2023-01-20 13:26:44,451 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:44,909 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:45,682 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:46,929 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:48,524 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:48,938 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:49,476 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:50,954 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:51,731 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:52,978 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:53,577 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:54,511 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:26:54,986 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:56,782 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:26:57,005 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:57,206 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:57,207 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:57,208 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:57,208 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:57,257 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:57,321 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:26:58,670 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:26:59,019 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:26:59,528 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:01,031 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:02,830 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:03,039 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:04,139 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:04,575 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:05,052 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:07,062 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:08,886 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:09,080 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:09,619 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:10,102 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:10,601 DEBUG   SystemMonitor:15308 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-20 13:27:10,602 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:27:11,119 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:13,139 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:14,671 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:14,942 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:15,151 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:15,252 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:17,172 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:19,194 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:19,716 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:20,288 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:20,429 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,433 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,434 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,435 DEBUG   SenderThread:15308 [sender.py:send():334] send: metric
+2023-01-20 13:27:20,435 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:27:20,435 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:27:20,438 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:27:20,984 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:20,985 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:27:21,208 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:23,006 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:23,231 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:24,764 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:25,253 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:25,496 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:27,058 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:27,269 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:29,280 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:29,818 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:30,828 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:31,287 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:33,295 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:34,876 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:35,143 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:35,305 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:36,027 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:36,096 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:36,096 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:36,097 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:36,098 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:36,147 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:36,212 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:27:37,323 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:39,345 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:39,929 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:40,615 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:27:41,208 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:41,383 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:41,628 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:43,399 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:44,974 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:45,416 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:47,255 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:47,274 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:47,431 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:48,255 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\config.yaml
+2023-01-20 13:27:49,446 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:50,018 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:51,457 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:53,317 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:53,465 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:53,507 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:55,082 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:27:55,479 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:57,496 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:27:58,581 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:27:59,373 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:27:59,506 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:00,126 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:01,515 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:03,522 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:03,636 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:05,180 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:05,429 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:05,529 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:07,541 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:08,678 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:09,555 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:10,226 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:10,618 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:28:11,506 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:11,608 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:13,627 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:14,644 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:14,645 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:14,645 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:14,646 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:14,650 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:14,696 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:14,762 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:15,274 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:15,638 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:17,565 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:17,649 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:19,671 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:20,296 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:20,328 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:21,693 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:22,685 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:22,688 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:28:22,689 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:28:22,691 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:28:23,630 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:23,631 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:28:23,713 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:25,354 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:25,720 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:25,728 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:27,740 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:29,695 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:29,752 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:30,397 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:30,834 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:31,761 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:33,771 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:35,448 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:35,761 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:35,787 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:35,962 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:37,806 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:39,814 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:40,505 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:40,633 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:28:41,273 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:41,854 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:43,839 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:43,879 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:45,552 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:45,900 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:46,333 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:47,916 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:49,909 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:49,934 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:50,586 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:51,431 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:51,955 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:53,623 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,624 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,624 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,625 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,675 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,740 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:28:53,974 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:55,640 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:28:55,964 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:28:55,989 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:28:56,779 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:28:57,997 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:00,024 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:00,696 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:02,037 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:02,043 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:02,099 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:04,065 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:05,751 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:06,086 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:07,227 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:08,101 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:08,108 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:10,118 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:10,638 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:29:10,792 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:12,151 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:12,568 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:14,134 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:14,172 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:15,845 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:16,194 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:17,621 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:18,204 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:20,198 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:20,221 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:20,902 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:22,234 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:22,771 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:24,243 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:24,929 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:24,931 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:29:24,932 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:29:24,934 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:29:25,249 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:29:25,959 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:26,257 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:26,260 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:27,271 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:27,954 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:28,266 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:30,271 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:30,998 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:32,287 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:32,315 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:32,565 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:32,566 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:32,567 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:32,568 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:32,618 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:32,685 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:29:33,129 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:34,305 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:36,017 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:36,316 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:38,332 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:38,343 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:38,404 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:40,348 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:40,653 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:29:41,059 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:42,372 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:43,683 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:44,388 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:46,098 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:46,396 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:46,407 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:48,407 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:48,795 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:50,419 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:51,157 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:52,427 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:52,451 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:54,006 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:29:54,450 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:56,204 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:29:56,462 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:58,482 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:29:58,493 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:29:59,207 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:00,490 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:01,231 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:02,502 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:04,441 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:04,511 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:04,549 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:06,285 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:06,526 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:08,534 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:10,008 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:10,547 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:10,619 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:10,667 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:30:11,351 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:12,007 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,008 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,009 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,010 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,060 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,127 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:12,583 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:14,599 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:15,427 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:16,394 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:16,624 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:17,702 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:18,638 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:20,478 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:20,658 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:21,442 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:22,668 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:23,766 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:24,682 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:26,049 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:26,501 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:26,698 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:28,298 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:28,302 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:30:28,303 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:30:28,305 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:30:28,708 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:28,793 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:30:29,799 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:30,729 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:31,326 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:31,528 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:32,750 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:34,769 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:35,836 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:36,569 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:36,585 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:36,779 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:38,810 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:40,671 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:30:40,824 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:41,622 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:41,810 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:41,902 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:42,869 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:44,887 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:46,680 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:46,867 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:46,908 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:47,972 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:48,929 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:50,949 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:51,670 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:51,671 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:51,672 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:51,673 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:51,724 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:51,725 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:51,792 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:30:52,119 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:52,965 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:54,014 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:30:54,986 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:56,773 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:30:56,999 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:30:57,407 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:30:59,010 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:01,036 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:01,818 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:02,112 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:02,830 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:03,053 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:05,058 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:06,870 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:07,063 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:08,086 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:08,182 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:09,076 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:10,681 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:31:11,088 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:11,899 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:13,126 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:13,533 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:14,233 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:15,144 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:16,956 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:17,161 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:18,592 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:19,173 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:20,261 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:21,180 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:22,016 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:23,186 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:24,024 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:25,196 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:26,328 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:27,077 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:27,207 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:29,225 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:29,639 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:31,239 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:31,790 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,790 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,791 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,792 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,843 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,911 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,920 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:31:31,923 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:31:31,924 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:31:31,925 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:31:32,127 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:32,375 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:31:33,250 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:34,393 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:34,951 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:35,255 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:37,172 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:37,270 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:39,283 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:40,411 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:40,442 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:40,690 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:31:41,302 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:42,211 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:43,335 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:45,352 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:46,247 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:46,495 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:47,256 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:47,371 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:49,391 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:51,293 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:51,406 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:52,305 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:52,553 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:53,419 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:55,438 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:56,569 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:31:57,348 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:31:57,446 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:31:58,626 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:31:59,457 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:01,478 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:01,827 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:02,387 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:03,499 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:05,514 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:06,682 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:07,089 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:07,432 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:07,534 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:09,553 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:10,691 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:32:11,573 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:11,834 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:11,835 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:11,836 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:11,837 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:11,888 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:11,957 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:12,474 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:12,708 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:12,740 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:13,617 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:15,639 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:17,524 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:17,657 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:18,705 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:18,798 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:19,671 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:21,683 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:22,553 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:23,695 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:23,995 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:24,854 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:25,715 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:27,604 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:27,735 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:29,048 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:29,761 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:30,898 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:31,782 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:32,650 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:33,797 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:34,345 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:35,806 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:35,810 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:32:35,810 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:32:35,812 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:32:35,815 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:35,944 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:32:36,958 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:37,721 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:37,823 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:37,973 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:39,837 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:39,859 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:40,700 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:32:41,846 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:42,786 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:43,039 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:43,887 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:45,147 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:45,906 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:47,826 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:47,924 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:49,941 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:50,654 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:51,094 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:51,690 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,691 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,692 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,693 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,745 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,813 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:32:51,957 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:52,881 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:53,974 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:55,988 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:32:56,185 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:32:57,143 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:32:57,921 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:32:58,005 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:00,019 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:01,244 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:02,031 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:02,967 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:03,216 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:04,042 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:06,052 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:06,734 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:08,014 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:08,067 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:09,292 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:10,075 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:10,708 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:33:12,087 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:12,735 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:13,061 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:14,127 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:15,330 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:16,148 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:18,107 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:18,160 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:18,371 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:20,166 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:22,181 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:23,145 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:23,396 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:23,860 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:24,195 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:26,205 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:28,185 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:28,222 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:29,184 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:29,449 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:30,233 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:31,988 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:31,989 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:31,990 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:31,991 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:32,043 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:32,111 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:32,247 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:33,231 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:34,268 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:34,713 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:35,477 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:36,283 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:38,267 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:38,305 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:39,765 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:40,026 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:33:40,029 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:33:40,030 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:33:40,031 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:33:40,314 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:40,542 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:33:40,715 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:33:41,547 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:42,324 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:42,554 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:43,312 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:44,360 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:45,772 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:46,370 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:47,611 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:48,373 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:48,379 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:50,387 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:51,410 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:52,398 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:53,437 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:33:54,407 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:54,697 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:33:56,425 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:56,717 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:33:58,435 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:33:58,491 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:00,444 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:00,767 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:02,405 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:02,460 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:03,546 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:04,475 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:06,494 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:06,809 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:07,918 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:08,510 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:08,594 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:10,529 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:10,722 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:34:12,306 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,307 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,308 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,309 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,361 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,428 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:12,545 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:12,849 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:13,437 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:13,624 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:14,593 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:16,611 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:18,489 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:18,629 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:18,680 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:20,643 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:20,940 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:22,655 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:23,717 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:23,978 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:24,667 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:26,675 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:26,997 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:28,693 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:28,764 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:29,485 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:30,713 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:32,724 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:33,031 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:33,793 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:34,731 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:34,803 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:36,746 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:38,757 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:38,843 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:39,093 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:40,124 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:40,730 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:34:40,766 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:42,776 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:43,907 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:44,612 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:44,614 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:34:44,615 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:34:44,616 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:34:44,815 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:45,145 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:45,145 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:34:45,631 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:46,836 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:47,157 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:48,847 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:48,950 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:50,684 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:50,861 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:52,791 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:52,791 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:52,792 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:52,793 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:52,845 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:52,881 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:52,913 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:34:53,218 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:34:53,991 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:54,889 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:56,347 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:34:56,913 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:58,933 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:34:59,032 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:34:59,265 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:00,942 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:01,704 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:02,957 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:04,081 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:04,964 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:05,298 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:06,986 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:07,025 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:08,997 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:09,115 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:10,741 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:35:11,015 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:11,338 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:12,760 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:13,031 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:14,149 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:15,066 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:17,087 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:17,878 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:19,098 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:19,185 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:19,421 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:21,110 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:22,925 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:23,120 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:24,234 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:25,129 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:25,496 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:27,142 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:28,240 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:29,154 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:29,271 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:31,168 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:31,565 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:32,772 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:32,773 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:32,774 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:32,775 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:32,827 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:32,896 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:33,177 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:33,764 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:34,323 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:35,188 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:37,203 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:37,634 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:39,100 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:39,215 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:39,349 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:40,742 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:35:41,228 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:43,236 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:44,402 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:44,776 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:45,275 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:45,719 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:47,297 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:49,297 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: partial_history
+2023-01-20 13:35:49,301 DEBUG   SenderThread:15308 [sender.py:send():334] send: history
+2023-01-20 13:35:49,301 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: summary_record
+2023-01-20 13:35:49,303 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:35:49,310 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:49,472 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:49,770 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:35:50,313 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:50,784 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:51,323 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:51,790 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:53,339 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:54,523 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:35:55,332 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:35:55,355 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:57,370 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:57,844 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:35:59,402 ERROR   gpu       :15308 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-01-20 13:35:59,568 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:36:00,313 DEBUG   SenderThread:15308 [sender.py:send():334] send: exit
+2023-01-20 13:36:00,313 INFO    SenderThread:15308 [sender.py:send_exit():557] handling exit code: 1
+2023-01-20 13:36:00,313 INFO    SenderThread:15308 [sender.py:send_exit():559] handling runtime: 589
+2023-01-20 13:36:00,314 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:36:00,314 INFO    SenderThread:15308 [sender.py:send_exit():565] send defer
+2023-01-20 13:36:00,314 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,314 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 0
+2023-01-20 13:36:00,315 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,315 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-01-20 13:36:00,315 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 1
+2023-01-20 13:36:00,315 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,315 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 1
+2023-01-20 13:36:00,315 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,315 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-01-20 13:36:00,315 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 2
+2023-01-20 13:36:00,316 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,316 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 2
+2023-01-20 13:36:00,316 INFO    HandlerThread:15308 [system_monitor.py:finish():161] Stopping system monitor
+2023-01-20 13:36:00,322 DEBUG   SystemMonitor:15308 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-20 13:36:00,323 DEBUG   SystemMonitor:15308 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-20 13:36:00,329 INFO    HandlerThread:15308 [interfaces.py:finish():175] Joined cpu
+2023-01-20 13:36:00,330 INFO    HandlerThread:15308 [interfaces.py:finish():175] Joined disk
+2023-01-20 13:36:00,347 INFO    HandlerThread:15308 [interfaces.py:finish():175] Joined gpu
+2023-01-20 13:36:00,347 INFO    HandlerThread:15308 [interfaces.py:finish():175] Joined memory
+2023-01-20 13:36:00,347 INFO    HandlerThread:15308 [interfaces.py:finish():175] Joined network
+2023-01-20 13:36:00,348 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,348 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-01-20 13:36:00,348 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 3
+2023-01-20 13:36:00,348 DEBUG   SenderThread:15308 [sender.py:send():334] send: stats
+2023-01-20 13:36:00,348 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,348 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 3
+2023-01-20 13:36:00,349 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:36:00,349 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,349 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-01-20 13:36:00,349 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 4
+2023-01-20 13:36:00,349 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,349 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 4
+2023-01-20 13:36:00,349 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,349 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-01-20 13:36:00,349 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 5
+2023-01-20 13:36:00,350 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,350 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 5
+2023-01-20 13:36:00,350 DEBUG   SenderThread:15308 [sender.py:send():334] send: summary
+2023-01-20 13:36:00,351 INFO    SenderThread:15308 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-01-20 13:36:00,352 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,352 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-01-20 13:36:00,352 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 6
+2023-01-20 13:36:00,352 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,352 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 6
+2023-01-20 13:36:00,352 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,352 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-01-20 13:36:00,352 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 7
+2023-01-20 13:36:00,352 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:36:00,352 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:00,352 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 7
+2023-01-20 13:36:00,353 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:00,353 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-01-20 13:36:00,859 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:36:01,360 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 13:36:01,859 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:36:02,524 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 8
+2023-01-20 13:36:02,524 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 13:36:02,525 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:02,525 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 8
+2023-01-20 13:36:02,525 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:02,525 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-01-20 13:36:02,536 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 9
+2023-01-20 13:36:02,537 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:02,537 DEBUG   SenderThread:15308 [sender.py:send():334] send: artifact
+2023-01-20 13:36:02,537 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 9
+2023-01-20 13:36:02,866 INFO    Thread-17 :15308 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:36:03,851 INFO    Thread-24 :15308 [upload_job.py:push():98] Skipped uploading C:\Users\xdieg\AppData\Local\wandb\wandb\artifacts\staging\tmp20wsvj55
+2023-01-20 13:36:04,212 INFO    Thread-25 :15308 [upload_job.py:push():101] Uploaded file C:\Users\xdieg\AppData\Local\wandb\wandb\artifacts\staging\tmpgb_tljzr
+2023-01-20 13:36:05,645 INFO    SenderThread:15308 [sender.py:send_artifact():1415] sent artifact job-https___github.com_halixness_Open-Assistant_model_reward_flant5_trainer.py - {'id': 'QXJ0aWZhY3Q6MzM0MDMxMDk4', 'digest': '265c42e5f403a4bda6c320205f25a6ac', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMTMxMDk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzM0MDE3MTEx', 'versionIndex': 0}}, 'version': 'latest'}
+2023-01-20 13:36:05,645 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:05,645 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: status_report
+2023-01-20 13:36:05,645 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-01-20 13:36:05,645 INFO    SenderThread:15308 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-20 13:36:05,883 INFO    SenderThread:15308 [dir_watcher.py:finish():392] scan: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files
+2023-01-20 13:36:05,883 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\conda-environment.yaml conda-environment.yaml
+2023-01-20 13:36:05,883 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\config.yaml config.yaml
+2023-01-20 13:36:05,884 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log output.log
+2023-01-20 13:36:05,887 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\requirements.txt requirements.txt
+2023-01-20 13:36:05,891 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-metadata.json wandb-metadata.json
+2023-01-20 13:36:05,891 INFO    SenderThread:15308 [dir_watcher.py:finish():406] scan save: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json wandb-summary.json
+2023-01-20 13:36:05,892 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 10
+2023-01-20 13:36:05,894 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:05,894 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 10
+2023-01-20 13:36:05,896 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:05,896 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-01-20 13:36:05,896 INFO    SenderThread:15308 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-20 13:36:06,409 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: keepalive
+2023-01-20 13:36:06,440 INFO    Thread-27 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\config.yaml
+2023-01-20 13:36:06,446 INFO    Thread-26 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\conda-environment.yaml
+2023-01-20 13:36:06,484 INFO    Thread-28 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\output.log
+2023-01-20 13:36:06,488 INFO    Thread-29 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\requirements.txt
+2023-01-20 13:36:06,516 INFO    Thread-30 :15308 [upload_job.py:push():143] Uploaded file C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\files\wandb-summary.json
+2023-01-20 13:36:06,724 INFO    Thread-16 :15308 [sender.py:transition_state():585] send defer: 11
+2023-01-20 13:36:06,724 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:06,724 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 11
+2023-01-20 13:36:06,725 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:06,725 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-01-20 13:36:06,725 INFO    SenderThread:15308 [file_pusher.py:join():165] waiting for file pusher
+2023-01-20 13:36:06,725 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 12
+2023-01-20 13:36:06,725 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:06,725 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 12
+2023-01-20 13:36:06,725 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:06,725 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-01-20 13:36:07,569 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 13
+2023-01-20 13:36:07,569 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:07,569 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 13
+2023-01-20 13:36:07,569 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:07,569 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-01-20 13:36:07,569 INFO    SenderThread:15308 [sender.py:transition_state():585] send defer: 14
+2023-01-20 13:36:07,570 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: defer
+2023-01-20 13:36:07,570 INFO    HandlerThread:15308 [handler.py:handle_request_defer():170] handle defer: 14
+2023-01-20 13:36:07,570 DEBUG   SenderThread:15308 [sender.py:send():334] send: final
+2023-01-20 13:36:07,570 DEBUG   SenderThread:15308 [sender.py:send():334] send: footer
+2023-01-20 13:36:07,571 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: defer
+2023-01-20 13:36:07,571 INFO    SenderThread:15308 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-01-20 13:36:07,571 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: poll_exit
+2023-01-20 13:36:07,571 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: server_info
+2023-01-20 13:36:07,571 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: get_summary
+2023-01-20 13:36:07,572 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: sampled_history
+2023-01-20 13:36:07,572 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: poll_exit
+2023-01-20 13:36:07,572 DEBUG   SenderThread:15308 [sender.py:send_request():361] send_request: server_info
+2023-01-20 13:36:07,794 INFO    MainThread:15308 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-01-20 13:36:07,794 INFO    MainThread:15308 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-01-20 13:36:07,799 INFO    MainThread:15308 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-01-20 13:36:07,801 DEBUG   HandlerThread:15308 [handler.py:handle_request():144] handle_request: shutdown
+2023-01-20 13:36:07,801 INFO    HandlerThread:15308 [handler.py:finish():841] shutting down handler
+2023-01-20 13:36:08,579 INFO    WriterThread:15308 [datastore.py:close():299] close: C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\wandb\run-20230120_132609-uch7o275\run-uch7o275.wandb
+2023-01-20 13:36:08,798 INFO    SenderThread:15308 [sender.py:finish():1491] shutting down sender
+2023-01-20 13:36:08,798 INFO    SenderThread:15308 [file_pusher.py:finish():160] shutting down file pusher
+2023-01-20 13:36:08,798 INFO    SenderThread:15308 [file_pusher.py:join():165] waiting for file pusher

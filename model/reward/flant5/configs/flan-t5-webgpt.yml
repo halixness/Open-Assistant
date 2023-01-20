@@ -7,7 +7,6 @@ loss: contrastive
 gradient_accumulation_steps: 16
 per_device_train_batch_size: 2
 warmup_steps: 600
-freeze_layer: 20
 eval_steps: 200
 save_steps: 500
 max_length: 400

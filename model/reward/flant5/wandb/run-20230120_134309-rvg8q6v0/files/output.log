@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+  1%|█▋                                                                                                                                                                        | 10/978 [01:04<1:40:25,  6.22s/it]
+
+
+
+
+
+
+
+
+
+
+  2%|███▍                                                                                                                                                                      | 20/978 [02:07<1:40:06,  6.27s/it]
+
+
+
+  2%|███▉                                                                                                                                                                      | 23/978 [02:25<1:39:26,  6.25s/it]Traceback (most recent call last):
+  File "trainer.py", line 220, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2541, in training_step
+    loss.backward()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\autograd\__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

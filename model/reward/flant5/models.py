@@ -14,9 +14,9 @@ class FlanT5Model(torch.nn.Module):
             "google/flan-t5-xxl",
         ]
 
-        # Freezing the model (no fine-tuning)
         self.model = T5EncoderModel.from_pretrained(self.flant5_model, trust_remote_code=True)
-        self.model.requires_grad = False
+        for p in self.model.parameters():
+            p.requires_grad = False
 
         self.mlp = torch.nn.ModuleList([
             torch.nn.Linear(embedding_size, 256),

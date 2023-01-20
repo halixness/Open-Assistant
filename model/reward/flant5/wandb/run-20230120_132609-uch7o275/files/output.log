@@ -1,0 +1,137 @@
+
+
+
+
+
+
+
+
+
+
+
+  1%|█▋                                                                                                                                                                        | 10/978 [01:06<1:40:29,  6.23s/it]
+
+
+
+
+
+
+
+
+
+  2%|███▎                                                                                                                                                                      | 19/978 [02:01<1:39:55,  6.25s/it]
+
+
+
+
+
+
+
+
+
+
+
+  3%|█████▏                                                                                                                                                                    | 30/978 [03:10<1:38:19,  6.22s/it]
+
+
+
+
+
+
+
+
+
+  4%|██████▊                                                                                                                                                                   | 39/978 [04:07<1:40:46,  6.44s/it]
+
+
+
+
+
+
+
+
+
+
+  5%|████████▌                                                                                                                                                                 | 49/978 [05:11<1:40:05,  6.46s/it]
+
+
+
+
+
+
+
+
+
+
+
+  6%|██████████▍                                                                                                                                                               | 60/978 [06:21<1:37:34,  6.38s/it]
+
+
+
+
+
+
+
+
+
+
+  7%|████████████▏                                                                                                                                                             | 70/978 [07:25<1:36:53,  6.40s/it]
+
+
+
+
+
+
+
+
+
+
+  8%|█████████████▉                                                                                                                                                            | 80/978 [08:30<1:36:23,  6.44s/it]
+
+
+
+
+
+
+
+
+
+  9%|███████████████▍                                                                                                                                                          | 89/978 [09:28<1:36:15,  6.50s/it]
+
+
+  9%|███████████████▊                                                                                                                                                          | 91/978 [09:41<1:36:23,  6.52s/it]Traceback (most recent call last):
+  File "trainer.py", line 215, in <module>
+    trainer.train()
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1527, in train
+    return inner_training_loop(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 1775, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\trainer.py", line 2523, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "trainer.py", line 72, in compute_loss
+    negative_scores = model(inputs["prefix"], inputs["negative"])
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\OneDrive\Desktop\Research\Open-Assistant\model\reward\flant5\models.py", line 32, in forward
+    embedded_suffixes = self.model(**suffixes).last_hidden_state
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1846, in forward
+    encoder_outputs = self.encoder(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 1040, in forward
+    layer_outputs = layer_module(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 673, in forward
+    self_attention_outputs = self.layer[0](
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 579, in forward
+    attention_output = self.SelfAttention(
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\torch\nn\modules\module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\xdieg\anaconda3\envs\pytorch_deeplearning\lib\site-packages\transformers\models\t5\modeling_t5.py", line 529, in forward
+    position_bias = position_bias + mask  # (batch_size, n_heads, seq_length, key_length)
+RuntimeError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 8.00 GiB total capacity; 6.87 GiB already allocated; 0 bytes free; 7.29 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
