@@ -105,9 +105,11 @@ class FlanT5Trainer(Trainer):
         prediction_loss_only: bool,
         ignore_keys: Optional[List[str]] = None,
     ) -> Tuple[Optional[torch.Tensor], Optional[torch.Tensor], Optional[torch.Tensor]]:
+
         with torch.inference_mode():
             # forward pass
             if "flan-t5" in self.model_name:
+                inputs = self._prepare_inputs(inputs)
                 positive_scores = model(inputs["prefix"], inputs["positive"])
                 negative_scores = model(inputs["prefix"], inputs["negative"])
 
@@ -116,6 +118,7 @@ class FlanT5Trainer(Trainer):
                 else:
                     raise NotImplementedError("Only contrastive loss has been implemented for FlanT5 model")
                 outputs = torch.hstack((positive_scores, negative_scores))  # logits
+                return (loss, outputs, None)
             else:
                 # compute loss on predict data
                 loss, logits = self._compute_loss(model, inputs)
